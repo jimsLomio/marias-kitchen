@@ -5,13 +5,13 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import mplcyberpunk
 
-
+#BACKGROUND IMAGE
 # Apply custom CSS styles for text color and background image
 custom_css = """
 <style>
       /* Change text color to white */
     .stText, .stHeader, .stCaption, h1, p {
-        color: #FFFFFF !important; /* Set text color to white */
+        color: white !important; /* Set text color to white */
     }
 
      /* Change button color to black */
@@ -22,22 +22,23 @@ custom_css = """
 
     /* Change input text color to black */
     .stTextInput>div>div>input {
-        color: green !important;
+        color: black !important;
     }
     /* Set background image */
     [data-testid="stAppViewContainer"] > .main {
-        background-image: url("https://img.freepik.com/free-vector/geometric-neon-hexagonal-bipyramid-background-vector_53876-177932.jpg?size=626&ext=jpg&ga=GA1.2.190209625.1707203559&semt=ais");
+        background-image: url("https://img.freepik.com/premium-photo/neoncolored-lake-shiny-cyberpunk-style_476006-786.jpg");
         background-size: 200%;
         background-position: top left;
         background-repeat: no-repeat;
         background-attachment: local;
+        /* Make the background image semi-transparent */
+        opacity: 1; /* Adjust the value to change transparency */
     }
 </style>
 """
 
 # Apply custom CSS styles
 st.markdown(custom_css, unsafe_allow_html=True)
-
 
 def get_interval(value):
     return max(1, int(value / 10))
