@@ -22,7 +22,7 @@ custom_css = """
 
     /* Change input text color to black */
     .stTextInput>div>div>input {
-        color: green !important;
+        color: white !important;
     }
     /* Set background image */
     [data-testid="stAppViewContainer"] > .main {
